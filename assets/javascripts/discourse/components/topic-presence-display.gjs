@@ -49,12 +49,12 @@ export default class TopicPresenceDisplay extends Component {
   get users() {
     const replyUsers = this.replyChannel?.users || [];
     const whisperUsers = this.whisperChannel?.users || [];
-    return [...replyUsers, ...whisperUsers];
+  /*  return [...replyUsers, ...whisperUsers];*/
 
-/*
+
     return [...replyUsers, ...whisperUsers].filter(
       (u) => u.id !== this.currentUser.id
-    );*/
+    );
   }
 
   <template>

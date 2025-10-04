@@ -109,7 +109,7 @@ export default class ComposerPresenceDisplay extends Component {
     }
 
     return users
-      //.filter((u) => u.id !== this.currentUser.id)
+      .filter((u) => u.id !== this.currentUser.id)
       .slice(0, this.siteSettings.presence_max_users_shown);
   }
 
